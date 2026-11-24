@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chromelite Technologies Limited | Pricing Schedule</title>
+  <link rel="stylesheet" href="chromlite.css">
+
+  <!-- INTERNAL CSS: PRINT STYLES ONLY -->
+  <style>
+    @media print {
+      /* Hide everything except the table */
+      .site-header,
+      .site-header nav,
+      .site-footer,
+      .pricing h1,
+      .pricing .note {
+        display: none;
+      }
+
+      .pricing {
+        padding: 0;
+      }
+
+      /* Full borders on the table */
+      .price-table,
+      .price-table th,
+      .price-table td {
+        border: 1px solid #000000;
+      }
+
+      .price-table th,
+      .price-table .category,
+      .price-table tfoot td,
+      .price-table tfoot .grand td {
+        background: #ffffff;
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <img src="chromelite-logo.png" alt="Chromelite Technologies Limited logo" style="width:180px;">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+  </header>
+
+  <!-- PRICING TABLE -->
+  <main class="pricing">
+    <h1>Pricing Schedule</h1>
+    <p class="note">All prices are in Uganda Shillings (UGX). VAT is charged at 18%.</p>
+
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th>Item No.</th>
+          <th>Category</th>
+          <th>Product Description</th>
+          <th>Unit Price (UGX)</th>
+          <th>Qty</th>
+          <th>Total (UGX)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Branded Stationery -->
+        <tr>
+          <td>1</td>
+          <td class="category" rowspan="3">Branded Stationery</td>
+          <td>Branded A5 Notebooks</td>
+          <td class="num">5,000</td>
+          <td class="num">100</td>
+          <td class="num">500,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Branded Ballpoint Pens</td>
+          <td class="num">1,000</td>
+          <td class="num">200</td>
+          <td class="num">200,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Business Cards (box of 100)</td>
+          <td class="num">20,000</td>
+          <td class="num">15</td>
+          <td class="num">300,000</td>
+        </tr>
+
+        <!-- Event Materials -->
+        <tr>
+          <td>4</td>
+          <td class="category" rowspan="3">Event Materials</td>
+          <td>Roll-up Banner (850 x 2000 mm)</td>
+          <td class="num">150,000</td>
+          <td class="num">4</td>
+          <td class="num">600,000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Event Flyers A5 (pack of 100)</td>
+          <td class="num">30,000</td>
+          <td class="num">10</td>
+          <td class="num">300,000</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Branded Table Cloth</td>
+          <td class="num">80,000</td>
+          <td class="num">5</td>
+          <td class="num">400,000</td>
+        </tr>
+
+        <!-- Branded Apparel -->
+        <tr>
+          <td>7</td>
+          <td class="category" rowspan="3">Branded Apparel</td>
+          <td>Branded Polo Shirts</td>
+          <td class="num">35,000</td>
+          <td class="num">20</td>
+          <td class="num">700,000</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Branded Caps</td>
+          <td class="num">15,000</td>
+          <td class="num">30</td>
+          <td class="num">450,000</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Branded T-Shirts</td>
+          <td class="num">25,000</td>
+          <td class="num">40</td>
+          <td class="num">1,000,000</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td class="label" colspan="5">Subtotal</td>
+          <td class="num">4,450,000</td>
+        </tr>
+        <tr>
+          <td class="label" colspan="5">VAT @ 18%</td>
+          <td class="num">801,000</td>
+        </tr>
+        <tr class="grand">
+          <td class="label" colspan="5">Grand Total</td>
+          <td class="num">5,251,000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <h4>Chromelite Technologies Limited</h4>
+    <address>
+      Grand City Complex, Naalya, Kampala<br>
+      Phone: +256 700 000 000<br>
+      Email: info@chromelite.co.ug
+    </address>
+    <p class="copy">&copy; 2026 Chromelite Technologies Limited. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

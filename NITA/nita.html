@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uganda National IT Skills Assessment 2026 | NITA-U</title>
+  <link rel="stylesheet" href="nita.css">
+</head>
+<body>
+
+  <!-- (a) Header: coat of arms + heading -->
+  <header class="site-header">
+    <img src="OIG1.jpg" alt="Uganda coat of arms" style="max-width:80px;">
+    <h1>National Information Technology Authority — Uganda</h1>
+  </header>
+
+  <!-- (a) Full-width banner with overlay title -->
+  <section class="banner">
+    <img src="OIP.webp" alt="Participants using computers in a Ugandan digital skills setting">
+    <div class="banner-overlay">
+      <h2>Uganda National IT Skills Assessment 2026</h2>
+    </div>
+  </section>
+
+  <!-- (a) 3-step progress indicator -->
+  <ol class="progress" aria-label="Survey progress">
+    <li class="current" aria-current="step"><span class="step-num">1</span> Respondent Details</li>
+    <li><span class="step-num">2</span> Skills Assessment</li>
+    <li><span class="step-num">3</span> Submit</li>
+  </ol>
+
+  <main>
+    <form action="#" method="post">
+
+      <!-- (b) Respondent Details -->
+      <fieldset>
+        <legend>Respondent Details</legend>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <select id="title" name="title">
+            <option value="">Select title</option>
+            <option>Mr</option>
+            <option>Mrs</option>
+            <option>Ms</option>
+            <option>Dr</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fullname">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+          <input type="text" id="fullname" name="fullname" required minlength="4" autocomplete="name">
+          <span class="hint">At least 4 characters.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required-mark" aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" pattern="\+256[0-9]{9}" placeholder="+256700123456" autocomplete="tel">
+          <span class="hint">Format: +256 followed by 9 digits.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+          <span class="group-label" id="gender-label">Gender</span>
+          <div class="radio-row" role="radiogroup" aria-labelledby="gender-label">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="undisclosed"> Prefer not to say</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="region">Region</label>
+          <select id="region" name="region">
+            <option value="">Select region</option>
+            <option>Central</option>
+            <option>Eastern</option>
+            <option>Northern</option>
+            <option>Western</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <span class="group-label" id="category-label">Respondent Category</span>
+          <div class="radio-row" role="radiogroup" aria-labelledby="category-label">
+            <label><input type="radio" name="category" value="ict-professional"> ICT Professional</label>
+            <label><input type="radio" name="category" value="government-officer"> Government Officer</label>
+            <label><input type="radio" name="category" value="student"> Student</label>
+          </div>
+        </div>
+      </fieldset>
+
+    </form>
+  </main>
+
+</body>
+</html>

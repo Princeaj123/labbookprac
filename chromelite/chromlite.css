@@ -1,0 +1,134 @@
+/* ===== Brand colours =====
+   Navy:   #003153
+   Orange: #FF6600
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #f5f7fa;
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  border-bottom: 4px solid #FF6600;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background-color: #003153;
+  padding: 0 30px;
+}
+
+nav a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 22px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FF6600;
+}
+
+/* ===== Intro ===== */
+.intro {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.intro h1 {
+  color: #003153;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== Why Choose Chromelite ===== */
+.why {
+  text-align: center;
+  padding: 20px 30px 40px;
+}
+
+.why h2 {
+  color: #003153;
+  border-bottom: 3px solid #FF6600;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 25px;
+}
+
+.card {
+  display: inline-block;          /* puts the 3 cards in a row */
+  vertical-align: top;
+  width: 30%;
+  min-width: 240px;
+  margin: 10px 1%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 5px solid #FF6600;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.card h3 {
+  color: #003153;
+  margin-top: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #003153;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+  border-top: 4px solid #FF6600;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+/* ===== Table styles (used by pricing.html) ===== */
+.table-section {
+  padding: 30px;
+}
+
+.table-section h1 {
+  color: #003153;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th, td {
+  border: 1px solid #003153;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #003153;
+  color: #ffffff;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #ffe6d5;
+}

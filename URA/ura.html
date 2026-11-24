@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIN Registration Portal | Uganda Revenue Authority</title>
+  <link rel="stylesheet" href="ura.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="URA.webp" alt="Uganda Revenue Authority logo" class="site-header__logo">
+    <h1>TIN Registration Portal</h1>
+  </header>
+
+  <div class="info-bar" role="note">Have your National ID ready before starting.</div>
+
+  <main class="form-area">
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <!-- Taxpayer type toggle -->
+      <div class="type-toggle" role="radiogroup" aria-label="Taxpayer type">
+        <input type="radio" id="type-individual" name="taxpayer_type" value="individual" checked>
+        <label for="type-individual">Individual Taxpayer</label>
+
+        <input type="radio" id="type-business" name="taxpayer_type" value="business">
+        <label for="type-business">Business Entity</label>
+      </div>
+
+      <!-- Section A -->
+      <fieldset class="section-individual">
+        <legend>Section A: Individual Taxpayer Details</legend>
+
+        <div class="field">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full_name" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="nin">NIN</label>
+          <input type="text" id="nin" name="nin" required
+                 pattern="[A-Z]{2}[A-Z0-9]{12}" minlength="14" maxlength="14"
+                 title="14 characters: two capital letters followed by 12 capital letters or digits"
+                 placeholder="e.g. CM12345678ABCD">
+          <small>14 characters: two capital letters, then 12 capital letters or digits.</small>
+        </div>
+
+        <div class="field">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="field">
+          <span class="field__label" id="gender-label">Gender</span>
+          <div class="choice-row" role="radiogroup" aria-labelledby="gender-label">
+            <label for="gender-male" class="choice">
+              <input type="radio" id="gender-male" name="gender" value="male"> Male
+            </label>
+            <label for="gender-female" class="choice">
+              <input type="radio" id="gender-female" name="gender" value="female"> Female
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="district">District</label>
+          <select id="district" name="district">
+            <option value="">Select a district</option>
+            <option value="kampala">Kampala</option>
+            <option value="wakiso">Wakiso</option>
+            <option value="mbarara">Mbarara</option>
+            <option value="gulu">Gulu</option>
+            <option value="jinja">Jinja</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="e.g. 0772 123456">
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="national-id-upload">Upload National ID</label>
+          <input type="file" id="national-id-upload" name="national_id" accept=".jpg,.jpeg,.pdf">
+          <small>Accepted formats: .jpg or .pdf</small>
+        </div>
+
+        <button type="button" class="btn-next">Next</button>
+      </fieldset>
+
+      <p class="business-note">Business Entity registration details will appear here.</p>
+
+    </form>
+  </main>
+
+</body>
+</html>

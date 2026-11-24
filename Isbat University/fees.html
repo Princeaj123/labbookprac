@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Statement | ISBAT University Student Portal</title>
+
+  <!-- EXTERNAL CSS: layout -->
+  <link rel="stylesheet" href="portal.css">
+
+  <!-- INTERNAL CSS: print styles only -->
+  <style>
+    @media print {
+      .sidebar,
+      .print-btn {
+        display: none;
+      }
+      .main {
+        margin-left: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      .data-table th,
+      .data-table td {
+        border: 1px solid #000000;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <img src="isbat1.jpg" alt="ISBAT University logo" class="sidebar-logo">
+    <p class="student-name">Aisha Nakamya</p>
+    <p class="student-id">Reg. No: 2024/BIT/0187</p>
+
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html">My Courses</a>
+      <a href="fees.html" class="active">Fee Statement</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN AREA -->
+  <main class="main">
+
+    <div class="statement-header">
+      <div>
+        <h1>Fee Statement</h1>
+        <p>Semester 1, 2026/2027 &nbsp;|&nbsp; Statement date: <span id="today">23 November 2026</span></p>
+      </div>
+      <button class="print-btn" onclick="window.print()">Print Statement</button>
+    </div>
+
+    <!-- STUDENT DETAILS -->
+    <section class="info-box">
+      <h2 class="section-title">Student Details</h2>
+      <div class="info-grid">
+        <p><strong>Name:</strong> Aisha Nakamya</p>
+        <p><strong>Registration No:</strong> 2024/BIT/0187</p>
+        <p><strong>Programme:</strong> Bachelor of Information Technology</p>
+        <p><strong>Year / Semester:</strong> Year 2, Semester 1</p>
+        <p><strong>Faculty:</strong> Faculty of Computing and Informatics</p>
+        <p><strong>Payment Status:</strong>
+          <!-- INLINE CSS: status badge only -->
+          <span class="badge" style="background-color:#FAEEDA; color:#633806;">Partially Paid</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- SUMMARY CARDS (Flexbox, styled in portal.css) -->
+    <section class="metrics">
+      <div class="metric-card">
+        <h3>Total Fees Charged</h3>
+        <p class="metric-value">UGX 2,300,000</p>
+      </div>
+      <div class="metric-card">
+        <h3>Total Paid</h3>
+        <p class="metric-value">UGX 1,850,000</p>
+      </div>
+      <div class="metric-card">
+        <h3>Outstanding Balance</h3>
+        <p class="metric-value">UGX 450,000</p>
+      </div>
+    </section>
+
+    <!-- FEE STRUCTURE -->
+    <h2 class="section-title">Fee Structure (Semester 1, 2026/2027)</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Fee Item</th>
+          <th>Description</th>
+          <th class="num">Amount (UGX)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Tuition Fee</td>
+          <td>Semester tuition for BIT Year 2</td>
+          <td class="num">1,850,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Registration Fee</td>
+          <td>Semester registration and enrolment</td>
+          <td class="num">100,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Examination Fee</td>
+          <td>End-of-semester examinations</td>
+          <td class="num">150,000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Library &amp; ICT Fee</td>
+          <td>Library access, computer labs and internet</td>
+          <td class="num">120,000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Student Guild Fee</td>
+          <td>Guild activities and student welfare</td>
+          <td class="num">50,000</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Medical &amp; ID Card Fee</td>
+          <td>Clinic services and student ID card</td>
+          <td class="num">30,000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Fees Charged</td>
+          <td class="num">2,300,000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- PAYMENT HISTORY -->
+    <h2 class="section-title">Payment History</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Receipt No.</th>
+          <th>Payment Method</th>
+          <th class="num">Amount Paid (UGX)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12 Aug 2026</td>
+          <td>RCT-2026-004581</td>
+          <td>Bank Deposit (Stanbic Bank)</td>
+          <td class="num">1,000,000</td>
+        </tr>
+        <tr>
+          <td>20 Sep 2026</td>
+          <td>RCT-2026-007316</td>
+          <td>Mobile Money (MTN MoMo)</td>
+          <td class="num">500,000</td>
+        </tr>
+        <tr>
+          <td>14 Oct 2026</td>
+          <td>RCT-2026-009872</td>
+          <td>Bank Deposit (Stanbic Bank)</td>
+          <td class="num">350,000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Paid</td>
+          <td class="num">1,850,000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- ACCOUNT LEDGER -->
+    <h2 class="section-title">Account Ledger</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Reference</th>
+          <th>Transaction</th>
+          <th class="num">Debit (UGX)</th>
+          <th class="num">Credit (UGX)</th>
+          <th class="num">Balance (UGX)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>01 Aug 2026</td><td>INV-26-0187-01</td><td>Tuition Fee</td><td class="num">1,850,000</td><td class="num">-</td><td class="num">1,850,000</td></tr>
+        <tr><td>01 Aug 2026</td><td>INV-26-0187-02</td><td>Registration Fee</td><td class="num">100,000</td><td class="num">-</td><td class="num">1,950,000</td></tr>
+        <tr><td>01 Aug 2026</td><td>INV-26-0187-03</td><td>Examination Fee</td><td class="num">150,000</td><td class="num">-</td><td class="num">2,100,000</td></tr>
+        <tr><td>01 Aug 2026</td><td>INV-26-0187-04</td><td>Library &amp; ICT Fee</td><td class="num">120,000</td><td class="num">-</td><td class="num">2,220,000</td></tr>
+        <tr><td>01 Aug 2026</td><td>INV-26-0187-05</td><td>Student Guild Fee</td><td class="num">50,000</td><td class="num">-</td><td class="num">2,270,000</td></tr>
+        <tr><td>01 Aug 2026</td><td>INV-26-0187-06</td><td>Medical &amp; ID Card Fee</td><td class="num">30,000</td><td class="num">-</td><td class="num">2,300,000</td></tr>
+        <tr><td>12 Aug 2026</td><td>RCT-2026-004581</td><td>Payment: Bank Deposit</td><td class="num">-</td><td class="num">1,000,000</td><td class="num">1,300,000</td></tr>
+        <tr><td>20 Sep 2026</td><td>RCT-2026-007316</td><td>Payment: Mobile Money</td><td class="num">-</td><td class="num">500,000</td><td class="num">800,000</td></tr>
+        <tr><td>14 Oct 2026</td><td>RCT-2026-009872</td><td>Payment: Bank Deposit</td><td class="num">-</td><td class="num">350,000</td><td class="num">450,000</td></tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Totals</td>
+          <td class="num">2,300,000</td>
+          <td class="num">1,850,000</td>
+          <td class="num">450,000</td>
+        </tr>
+        <tr class="balance-row">
+          <td colspan="5">OUTSTANDING BALANCE DUE</td>
+          <td class="num">UGX 450,000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- HOW TO PAY -->
+    <section class="info-box">
+      <h2 class="section-title">How to Pay</h2>
+      <p><strong>Bank:</strong> Stanbic Bank Uganda &nbsp;|&nbsp;
+         <strong>Account Name:</strong> ISBAT University &nbsp;|&nbsp;
+         <strong>Account No:</strong> 9030000000000</p>
+      <p><strong>Mobile Money:</strong> Pay via MTN MoMo or Airtel Money using the
+         university merchant code and your registration number as the reference.</p>
+      <p><strong>Payment deadline for the balance:</strong> 15 December 2026.
+         Students with an unpaid balance may not be allowed to sit end-of-semester examinations.</p>
+      <p class="note">For fee queries, contact the Finance Office at finance@isbat.ac.ug.
+         Please keep all receipts as proof of payment.</p>
+    </section>
+
+  </main>
+
+  <script>
+    document.getElementById("today").textContent =
+      new Date().toLocaleDateString("en-GB", {
+        day: "numeric", month: "long", year: "numeric"
+      });
+  </script>
+
+</body>
+</html>
